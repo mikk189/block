@@ -1,0 +1,32 @@
+.block {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 40%;
+}
+.square {
+  background-color: red;
+  animation-name: movesquare;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+@keyframes movesquare {
+  0% {
+  }
+  25% {
+    background-color: green;
+    transform: translateY(100%);
+  }
+  50%{
+    background-color: aqua;
+    transform:translate(100%, 100%) ;
+  }
+  75%{
+    background-color: bisque;
+    transform: translate(100%, 0);
+  }
+}
